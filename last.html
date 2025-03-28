@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Girlfriend?</title>
+</head>
+<body>
+
+    <!-- Container for the Question -->
+    <div class="content-container">
+        <div class="text-container">
+            <p>Will you be my girlfriend?</p>
+        </div>
+    </div>
+
+    <!-- Yes/No Buttons -->
+    <div class="buttons-container">
+        <a href="yes.html" class="button">Yes</a>
+        <a href="no.html" class="button">No</a>
+    </div>
+
+</body>
+
+<style>
+/* Light Gray Background */
+body {
+    background-color: #d3d3d3; /* Light gray */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Container for the Question */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+/* Text Container with Semi-Transparent Background */
+.text-container {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.text-container p {
+    font-size: 36px; /* Large text size */
+    line-height: 1.5;
+}
+
+/* Buttons Container */
+.buttons-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Button Styling */
+.button {
+    background-color: #4CAF50; /* Green button color for 'Yes' */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the "No" button with a different color */
+.button:last-child {
+    background-color: #f44336; /* Red button color for 'No' */
+}
+
+.button:last-child:hover {
+    background-color: #e53935;
+}
+</style>
+
+</html>

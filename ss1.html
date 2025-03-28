@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS Page</title>
+</head>
+<body>
+
+    <!-- Wrap the entire content in an anchor tag to make everything clickable -->
+    <a href="ss2.html" class="clickable-area">
+
+        <!-- SS Image and Background -->
+        <div class="background-container">
+
+            <!-- Image Container -->
+            <div class="image-container">
+                <img src="ss2.jpg" alt="SS Image">
+            </div>
+
+        </div>
+
+    </a>
+
+</body>
+
+<style>
+/* Ensure the body and html take up the full viewport */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Make the entire page clickable */
+a.clickable-area {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* Remove the underline from the link */
+}
+
+/* Background and Image Container */
+.background-container {
+    display: flex;
+    height: 100%;
+    background-color: #f3f3f3; /* Light color for remaining space */
+}
+
+/* Image Container */
+.image-container {
+    flex: 1; /* The image will take as much space as it needs */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure the image fits properly in the screen */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes sure the image fills the container without distortion */
+}
+
+/* Background color */
+.background-container {
+    background-color: #f0f0f0; /* Light gray background color */
+}
+</style>
+
+</html>

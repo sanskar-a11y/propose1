@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+</head>
+<body>
+
+    <!-- Wrap the whole content in an anchor tag to make everything clickable -->
+    <a href="third.html" class="clickable-area">
+
+        <!-- Full Background Image -->
+        <div class="background-image-container">
+            <img src="dale.webp" alt="Dale Image">
+        </div>
+
+    </a>
+
+</body>
+
+<style>
+/* Full screen background image */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Make everything clickable */
+a.clickable-area {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* Remove underline from the link */
+}
+
+/* Background image styling */
+.background-image-container {
+    width: 100%;
+    height: 100%;
+}
+
+.background-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the whole page */
+}
+</style>
+
+</html>

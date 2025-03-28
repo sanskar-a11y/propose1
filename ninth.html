@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9th Page</title>
+</head>
+<body>
+
+    <!-- Make the entire page clickable and link to the 10th page -->
+    <a href="tenth.html" class="clickable-area">
+
+        <!-- Message Container -->
+        <div class="message-container">
+            <p class="message">
+                Before that, I had to show something.
+            </p>
+        </div>
+
+    </a>
+
+</body>
+
+<style>
+/* Light background for a soothing vibe */
+body {
+    background-color: #f3e5f5; /* Light lavender background, soft and subtle */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Make the entire page clickable */
+a.clickable-area {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Container for the message */
+.message-container {
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white background */
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling the message */
+.message {
+    font-size: 28px; /* Medium font size for emphasis */
+    color: #333; /* Dark gray for readability */
+    line-height: 1.5;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Adding speech bubble icons */
+.message::before {
+    content: "💬 "; /* Adding speech bubble icon at the start */
+    font-size: 32px;
+}
+
+.message::after {
+    content: " 💬"; /* Adding speech bubble icon at the end */
+    font-size: 32px;
+}
+
+</style>
+
+</html>

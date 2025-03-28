@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Your Name</title>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h2>What is your name?</h2>
+        <input type="text" id="nameInput" placeholder="Type your name here...">
+        <button onclick="goToNextPage()">Submit</button>
+    </div>
+
+    <script>
+        function goToNextPage() {
+            let name = document.getElementById("nameInput").value;
+            if (name.trim() !== "") {
+                localStorage.setItem("username", name);
+                window.location.href = "second.html";
+            } else {
+                alert("Please enter your name.");
+            }
+        }
+    </script>
+
+</body>
+
+<style>
+/* Full-screen Background Image */
+body {
+    background: url('wp10422216.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Centered Container - Shifted Up */
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 300px;
+    margin-top: -70px; /* Moves the div 70px up */
+}
+
+/* Input Field */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button */
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e68900;
+}
+</style>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8th Page</title>
+</head>
+<body>
+
+    <!-- Make the entire page clickable and link to the 9th page -->
+    <a href="ninth.html" class="clickable-area">
+
+        <!-- Message Container -->
+        <div class="message-container">
+            <p class="message">
+                Page pe agar kuch galat lage toh sorry, par end mein apne views zarur share karna, jo bhi mann mein aaye, vo pyaar se aur sach-baat bataana.
+            </p>
+        </div>
+
+    </a>
+
+</body>
+
+<style>
+/* Light background for a soft, non-overpowering look */
+body {
+    background-color: #e0f7fa; /* Light cyan background, soft and calming */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Make the entire page clickable */
+a.clickable-area {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Container for the message */
+.message-container {
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white background */
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling the message */
+.message {
+    font-size: 24px; /* Larger font size for emphasis */
+    color: #333; /* Dark gray for readability */
+    line-height: 1.5;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Adding speech bubble icons */
+.message::before {
+    content: "💬 "; /* Adding speech bubble icon at the start */
+    font-size: 28px;
+}
+
+.message::after {
+    content: " 💬"; /* Adding speech bubble icon at the end */
+    font-size: 28px;
+}
+
+</style>
+
+</html>

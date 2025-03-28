@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifth Page</title>
+</head>
+<body>
+
+    <!-- Wrap the whole content in an anchor tag to make everything clickable -->
+    <a href="ss1.html" class="clickable-area">
+
+        <!-- Container for the Image and Text (side by side) -->
+        <div class="content-container">
+
+            <!-- Image -->
+            <div class="image-container">
+                <img src="alien.jpg" alt="Alien Image">
+            </div>
+
+            <!-- Text Container -->
+            <div class="text-container">
+                <p>Dekho mai risk le raha huu</p>
+            </div>
+
+        </div>
+
+    </a>
+
+</body>
+
+<style>
+/* Light Gray Background */
+body {
+    background-color: #d3d3d3; /* light gray */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Make the whole page clickable */
+a.clickable-area {
+    display: block;
+    text-decoration: none; /* Remove underline */
+    width: 100%;
+    height: 100%;
+}
+
+/* Flexbox container to place text and image side by side */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Image Container */
+.image-container {
+    width: 40%;
+    height: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Text Container with Semi-Transparent Background */
+.text-container {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 50%;
+    margin-left: 20px;
+}
+
+.text-container p {
+    font-size: 36px; /* Large text size */
+    line-height: 1.5;
+}
+</style>
+
+</html>
